@@ -8,6 +8,8 @@ body {
   border: 2px solid black;
   height: 100vh;
   position: relative;
+  user-select: none;
+  touch-action: manipulation;
 }
 #description {
   animation: fadeIn 2s ease-in-out;
@@ -99,10 +101,6 @@ body {
   }
 }
 @media (max-width: 600px) {
-  * {
-    user-select: none;
-    touch-action: manipulation;
-  }
   #box {
     width: 27%;
     height: 10%;
@@ -132,6 +130,8 @@ body {
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
     z-index: 10000;
+    user-select: none;
+    touch-action: manipulation;
   }
   #up {
     top: 58%;
@@ -153,6 +153,8 @@ body {
   body {
     height: 98vh;
     overflow: hidden;
+    user-select: none;
+    touch-action: manipulation;
   }
   #description {
     font-size: 2em;
