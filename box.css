@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+}
+body {
+  border: 2px solid black;
+  height: 100vh;
+  position: relative;
+}
+#description {
+  animation: fadeIn 2s ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+#pressedletter,
+#description {
+  border: 0;
+  font-size: 70px;
+  color: #5e5e5e;
+  text-decoration: wavy;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  top: 50%;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#box {
+  width: 3.5%;
+  z-index: 1000;
+  background-color: lightblue;
+  border: 2px solid blue;
+  border-radius: 10%;
+  padding: 10px;
+  font-size: 68px;
+  font-weight: bold;
+  color: darkblue;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  position: absolute;
+  offset: 0 0;
+  left: 860px;
+  top: 818px;
+  height: 10%;
+}
