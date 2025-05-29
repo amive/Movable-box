@@ -82,6 +82,8 @@ body {
     color: darkgreen;
     font-family: cursive;
     z-index: 10000;
+    user-select: none;
+    touch-action: manipulation;
   }
   #up {
     top: 65%;
