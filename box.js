@@ -8,6 +8,7 @@ let left = document.getElementById("left");
 let right = document.getElementById("right");
 document.addEventListener("keydown", (moveBox) => {
   const key = moveBox.key.toLowerCase();
+  if (key !== "a" && key !== "d" && key !== "w" && key !== "s") return;
   const stepX =
     key === "a"
       ? box.offsetLeft - 50
@@ -98,6 +99,7 @@ document.addEventListener("touchstart", (MobileKey) => {
       { once: true }
     );
   }
+  if (key !== "a" && key !== "d" && key !== "w" && key !== "s") return;
   if (key === "a" || key === "d" || key === "w" || key === "s") {
     description.textContent = "";
   }

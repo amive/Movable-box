@@ -42,7 +42,7 @@ body {
   position: absolute;
   offset: 0 0;
   left: 860px;
-  top: 818px;
+  top: 777px;
   height: 10%;
   transition: left 0.1s ease-out, top 0.1s ease-out;
 }
@@ -51,6 +51,52 @@ body {
 #left,
 #right {
   display: none;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #333;
+  letter-spacing: 2px;
+  z-index: 10001;
+  animation: footerGlowPulse 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.fas {
+  bottom: -4px;
+  position: relative;
+}
+@keyframes footerGlowPulse {
+  0% {
+    color: #222;
+    text-shadow: 0 2px 8px rgba(255, 215, 0, 0.15);
+    font-size: 1.2em;
+  }
+  20% {
+    color: #ffd700;
+    text-shadow: 0 2px 16px #ffd700, 0 0 32px #ffe066;
+    font-size: 1.2em;
+  }
+  50% {
+    color: #fffbe7;
+    text-shadow: 0 4px 32px #ffe066, 0 0 64px #ffd700;
+    font-size: 1.2em;
+  }
+  80% {
+    color: #ffd700;
+    text-shadow: 0 2px 16px #ffd700, 0 0 32px #fad12e;
+    font-size: 1.2em;
+  }
+  100% {
+    color: #222;
+    text-shadow: 0 2px 8px rgba(255, 215, 0, 0.15);
+    font-size: 1.2em;
+  }
 }
 @media (max-width: 600px) {
   * {
@@ -82,25 +128,28 @@ body {
     transition: transform 0.1s ease-in-out;
     font-weight: bold;
     color: darkgreen;
-    font-family: cursive;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     z-index: 10000;
   }
   #up {
-    top: 65%;
+    top: 58%;
     left: 50%;
   }
   #down {
-    top: 63%;
+    top: 56%;
     left: 50%;
   }
   #left {
-    top: 52.77%;
+    top: 45.77%;
     left: 35%;
   }
   #right {
-    top: 42.7%;
+    top: 35.7%;
     left: 65%;
   }
+
   body {
     height: 98vh;
     overflow: hidden;
